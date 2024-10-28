@@ -6,6 +6,17 @@
     <title>Document</title>
   </head>
   <body>
-    <q> {{ pagecontents }} </q>
+    <form action="/shorturl">
+      <label for="name">Geef de alias en de url:</label>
+      <input type="text" id="alias" name="alias" />
+      <input type="text" id="url" name="url" />
+      <button type="submit">Submit</button>
+    </form>
+    {% if errors %}
+    <ul style="color:red">
+      {% for error in errors %}
+      <li>{{ error }}</li>
+      {% endfor %}
+    {% endif %}
   </body>
 </html>

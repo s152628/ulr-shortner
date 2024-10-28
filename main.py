@@ -1,26 +1,25 @@
-from flask import Flask, render_template, abort, request
-from markupsafe import escape
+from flask import Flask, render_template, request
+
 
 app = Flask(__name__)
-
-aliasses = {
-    "couldnthelpit": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
-    "test": "https://www.w3schools.com/python/python_dictionaries.asp",
-    "yaaas": "https://git-scm.com/docs/gitignore",
-}
 
 
 @app.route("/")
 def pagecontent():
-    with open("pagecontents.txt", "r") as file:
-        pagecontents = file.read()
-    return render_template("template.html", pagecontents=pagecontents)
+    return render_template("template.html")
 
 
-@app.route(f"/shorturl/<alias>")
-def aliasroute(alias):
-    url = aliasses.get(alias)
-    if url:
-        return f"{url}"
+@app.route("/shorturl")
+def controlpage():
+    alias = request.args.get("alias")
+    url = request.args.get("url")
+    errors = []
+    if not alias:
+        errors.append("Alias is required")
+    if not url:
+        errors.append("Url is required")
+
+    if errors:
+        return render_template("template.html", errors=errors)
     else:
-        abort(404)
+        return f"Alias: {alias} Url: {url}"
