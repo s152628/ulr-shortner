@@ -140,3 +140,280 @@ Homepagina werd bezocht
 10/29/2024 04:39:06 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:39:06] "[32mGET /shorturl?url=rcfzfyqgtkwgjfi HTTP/1.1[0m" 302 -
 10/29/2024 04:39:10 PM - DEBUG - Shorturl pagina werd bezocht
 10/29/2024 04:39:10 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:39:10] "[32mGET /shorturl?url=rcfzfyqgtkwgjfi HTTP/1.1[0m" 302 -
+10/29/2024 04:53:06 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 04:53:06 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 04:53:17 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 04:53:17 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:53:17] "GET / HTTP/1.1" 200 -
+10/29/2024 04:53:17 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:53:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 04:53:17 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:53:17] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 04:53:24 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 04:53:24 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:53:24] "GET /shorturl?url= HTTP/1.1" 200 -
+10/29/2024 04:53:24 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:53:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 04:53:24 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:53:24] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 04:53:47 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 04:53:47 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 04:53:58 PM - DEBUG - Function controlpage was called with arguments () and keyword arguments {}
+10/29/2024 04:53:58 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 04:53:58 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:53:58] "GET /shorturl?url= HTTP/1.1" 200 -
+10/29/2024 04:53:59 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:53:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 04:53:59 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:53:59] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 04:54:41 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 04:54:41 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 04:54:47 PM - DEBUG - Function controlpage was called with arguments () and keyword arguments {}
+10/29/2024 04:54:47 PM - ERROR - An exception occurred in function 'controlpage': controlpage() missing 1 required positional argument: 'alias'
+Traceback (most recent call last):
+  File "C:\Users\miros\Documents\AP\2de jaar\python\ulr-shortner\main.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: controlpage() missing 1 required positional argument: 'alias'
+10/29/2024 04:54:47 PM - ERROR - Exception on /shorturl [GET]
+Traceback (most recent call last):
+  File "C:\Users\miros\Documents\AP\2de jaar\python\ulr-shortner\.venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\miros\Documents\AP\2de jaar\python\ulr-shortner\.venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\miros\Documents\AP\2de jaar\python\ulr-shortner\.venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\miros\Documents\AP\2de jaar\python\ulr-shortner\.venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\miros\Documents\AP\2de jaar\python\ulr-shortner\main.py", line 29, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: controlpage() missing 1 required positional argument: 'alias'
+10/29/2024 04:54:47 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:54:47] "[35m[1mGET /shorturl?url= HTTP/1.1[0m" 500 -
+10/29/2024 04:55:23 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 04:55:23 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 04:55:26 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 04:55:26 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:55:26] "GET /shorturl?url= HTTP/1.1" 200 -
+10/29/2024 04:55:26 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:55:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 04:55:26 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:55:26] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 04:55:27 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 04:55:27 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:55:27] "GET /shorturl?url= HTTP/1.1" 200 -
+10/29/2024 04:55:27 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:55:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 04:55:27 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:55:27] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 05:09:21 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 05:09:21 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 05:09:30 PM - DEBUG - Functie pagecontent werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:09:30 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 05:09:30 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:09:30] "GET / HTTP/1.1" 200 -
+10/29/2024 05:09:30 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:09:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 05:09:30 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:09:30] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 05:09:57 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 05:09:57 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 05:10:04 PM - DEBUG - Functie pagecontent werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:10:04 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 05:10:04 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:10:04] "GET / HTTP/1.1" 200 -
+10/29/2024 05:10:04 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:10:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 05:10:04 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:10:04] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 05:10:18 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:10:18 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:10:18 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:10:18 PM - DEBUG - Starting new HTTPS connection (1): docs.python.org:443
+10/29/2024 05:10:18 PM - DEBUG - https://docs.python.org:443 "GET /3/library/functools.html HTTP/11" 200 16992
+10/29/2024 05:10:18 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:10:18] "GET /shorturl?url=https://docs.python.org/3/library/functools.html%23functools.wraps HTTP/1.1" 200 -
+10/29/2024 05:10:18 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:10:18] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 05:11:23 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:11:23 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:11:23 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:11:23 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:11:23] "[32mGET /shorturl?url=gwruxxotrmyhxhz HTTP/1.1[0m" 302 -
+10/29/2024 05:24:04 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 05:24:04 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 05:24:14 PM - DEBUG - Functie pagecontent werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:24:14 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 05:24:14 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:24:14] "GET / HTTP/1.1" 200 -
+10/29/2024 05:24:14 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:24:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 05:24:14 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:24:14] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 05:24:21 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:24:21 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:24:21 PM - DEBUG - Starting new HTTPS connection (1): stackoverflow.com:443
+10/29/2024 05:24:21 PM - DEBUG - https://stackoverflow.com:443 "GET /questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/11" 200 None
+10/29/2024 05:24:21 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:24:21 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:24:21] "GET /shorturl?url=https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1" 200 -
+10/29/2024 05:24:21 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:24:21] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 05:24:28 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:24:28 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:24:28 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:24:28] "GET /shorturl?url=oxbokbcpwmsqesq HTTP/1.1" 200 -
+10/29/2024 05:24:28 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:24:28] "[36mGET /static/style-404.css HTTP/1.1[0m" 304 -
+10/29/2024 05:24:47 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 05:24:47 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 05:24:50 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:24:50 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:24:50 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:24:50 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:24:50] "[32mGET /shorturl?url=oxbokbcpwmsqesq HTTP/1.1[0m" 302 -
+10/29/2024 05:24:50 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:24:50] "[33mGET /https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1[0m" 404 -
+10/29/2024 05:25:04 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:25:04 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:25:04 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:25:04 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:25:04] "[32mGET /shorturl?url=oxbokbcpwmsqesq HTTP/1.1[0m" 302 -
+10/29/2024 05:25:04 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:25:04] "[33mGET /https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1[0m" 404 -
+10/29/2024 05:25:19 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:25:19 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:25:19 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:25:19 PM - DEBUG - Starting new HTTPS connection (1): docs.python.org:443
+10/29/2024 05:25:19 PM - DEBUG - https://docs.python.org:443 "GET /3/library/functools.html HTTP/11" 200 16993
+10/29/2024 05:25:19 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:25:19] "GET /shorturl?url=https://docs.python.org/3/library/functools.html%23functools.wraps HTTP/1.1" 200 -
+10/29/2024 05:25:19 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:25:19] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 05:25:25 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:25:25 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:25:25 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:25:25 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:25:25] "[32mGET /shorturl?url=stybgddeovpqffg HTTP/1.1[0m" 302 -
+10/29/2024 05:25:25 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:25:25] "[33mGET /https://docs.python.org/3/library/functools.html HTTP/1.1[0m" 404 -
+10/29/2024 05:26:49 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:26:49 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:26:49 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:26:49 PM - DEBUG - Starting new HTTPS connection (1): docs.python.org:443
+10/29/2024 05:26:49 PM - DEBUG - https://docs.python.org:443 "GET /3/library/functools.html HTTP/11" 200 16993
+10/29/2024 05:26:49 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:26:49] "GET /shorturl?url=https://docs.python.org/3/library/functools.html%23functools.wraps HTTP/1.1" 200 -
+10/29/2024 05:26:49 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:26:49] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 05:26:51 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:26:51 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:26:51 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:26:51 PM - DEBUG - Starting new HTTPS connection (1): docs.python.org:443
+10/29/2024 05:26:51 PM - DEBUG - https://docs.python.org:443 "GET /3/library/functools.html HTTP/11" 200 16993
+10/29/2024 05:26:51 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:26:51] "GET /shorturl?url=https://docs.python.org/3/library/functools.html%23functools.wraps HTTP/1.1" 200 -
+10/29/2024 05:26:51 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:26:51] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 05:26:53 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:26:53 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:26:53 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:26:53 PM - DEBUG - Starting new HTTPS connection (1): docs.python.org:443
+10/29/2024 05:26:53 PM - DEBUG - https://docs.python.org:443 "GET /3/library/functools.html HTTP/11" 200 16993
+10/29/2024 05:26:53 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:26:53] "GET /shorturl?url=https://docs.python.org/3/library/functools.html%23functools.wraps HTTP/1.1" 200 -
+10/29/2024 05:26:53 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:26:53] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 05:27:19 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:27:19 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:27:19 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:27:19 PM - DEBUG - Starting new HTTPS connection (1): docs.python.org:443
+10/29/2024 05:27:19 PM - DEBUG - https://docs.python.org:443 "GET /3/library/functools.html HTTP/11" 200 16993
+10/29/2024 05:27:19 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:27:19] "GET /shorturl?url=https://docs.python.org/3/library/functools.html%23functools.wraps HTTP/1.1" 200 -
+10/29/2024 05:27:19 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:27:19] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 05:27:25 PM - DEBUG - Functie redirect_to_url werd aangeroepen met argumenten: () en keyword argumenten: {'alias': 'ddknfopemgikgct'}
+10/29/2024 05:27:25 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:27:25 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:27:25] "[32mGET /ddknfopemgikgct HTTP/1.1[0m" 302 -
+10/29/2024 05:27:47 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:27:47 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:27:47 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:27:47] "GET /shorturl?url= HTTP/1.1" 200 -
+10/29/2024 05:27:47 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:27:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 05:27:47 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:27:47] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 05:27:50 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:27:50 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:27:50 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:27:50 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:27:50] "[32mGET /shorturl?url=ddknfopemgikgct HTTP/1.1[0m" 302 -
+10/29/2024 05:27:50 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:27:50] "[33mGET /https://docs.python.org/3/library/functools.html HTTP/1.1[0m" 404 -
+10/29/2024 05:28:31 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 05:28:31 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 05:28:37 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:28:37 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:28:37 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:28:37] "GET /shorturl?url= HTTP/1.1" 200 -
+10/29/2024 05:28:37 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:28:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 05:28:37 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:28:37] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 05:28:43 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:28:43 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:28:43 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:28:43 PM - DEBUG - Starting new HTTPS connection (1): stackoverflow.com:443
+10/29/2024 05:28:43 PM - DEBUG - https://stackoverflow.com:443 "GET /questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/11" 200 None
+10/29/2024 05:28:43 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:28:43] "GET /shorturl?url=https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1" 200 -
+10/29/2024 05:28:43 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:28:43] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 05:28:47 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:28:47 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:28:47 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:28:47 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:28:47] "[32mGET /shorturl?url=fbaywrmobsjkfmi HTTP/1.1[0m" 302 -
+10/29/2024 05:28:47 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:28:47] "[33mGET /https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1[0m" 404 -
+10/29/2024 05:31:03 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 05:31:03 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 05:31:07 PM - DEBUG - Functie pagecontent werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:31:07 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 05:31:07 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:31:07] "GET / HTTP/1.1" 200 -
+10/29/2024 05:31:07 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:31:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 05:31:07 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:31:07] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 05:31:11 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:31:11 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:31:11 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:31:11 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:31:11] "[32mGET /shorturl?url=fbaywrmobsjkfmi HTTP/1.1[0m" 302 -
+10/29/2024 05:33:50 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 05:33:50 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 05:33:53 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:33:53 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:33:53 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:33:53 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:33:53] "[32mGET /shorturl?url=fbaywrmobsjkfmi HTTP/1.1[0m" 302 -
+10/29/2024 05:33:53 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:33:53] "[33mGET /https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1[0m" 404 -
+10/29/2024 05:36:51 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 05:36:51 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 05:36:52 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:36:52 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:36:52 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:36:52 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:36:52] "[32mGET /shorturl?url=fbaywrmobsjkfmi HTTP/1.1[0m" 302 -
+10/29/2024 05:36:52 PM - DEBUG - Functie redirect_to_url werd aangeroepen met argumenten: () en keyword argumenten: {'alias': 'fbaywrmobsjkfmi'}
+10/29/2024 05:36:52 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:36:52 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:36:52] "[32mGET /fbaywrmobsjkfmi HTTP/1.1[0m" 302 -
+10/29/2024 05:37:29 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:37:29 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:37:29 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:37:29 PM - DEBUG - Starting new HTTPS connection (1): www.geeksforgeeks.org:443
+10/29/2024 05:37:29 PM - DEBUG - https://www.geeksforgeeks.org:443 "GET /decorators-with-parameters-in-python/ HTTP/11" 200 None
+10/29/2024 05:37:29 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:37:29] "GET /shorturl?url=https://www.geeksforgeeks.org/decorators-with-parameters-in-python/ HTTP/1.1" 200 -
+10/29/2024 05:37:29 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:37:29] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 05:37:33 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:37:33 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:37:33 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:37:33 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:37:33] "[32mGET /shorturl?url=knmenjatxkjayto HTTP/1.1[0m" 302 -
+10/29/2024 05:37:33 PM - DEBUG - Functie redirect_to_url werd aangeroepen met argumenten: () en keyword argumenten: {'alias': 'knmenjatxkjayto'}
+10/29/2024 05:37:33 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:37:33 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:37:33] "[32mGET /knmenjatxkjayto HTTP/1.1[0m" 302 -
+10/29/2024 05:37:40 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:37:40 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:37:40 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:37:40 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:37:40] "[32mGET /shorturl?url=knmenjatxkjayto HTTP/1.1[0m" 302 -
+10/29/2024 05:37:40 PM - DEBUG - Functie redirect_to_url werd aangeroepen met argumenten: () en keyword argumenten: {'alias': 'knmenjatxkjayto'}
+10/29/2024 05:37:40 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:37:40] "[32mGET /knmenjatxkjayto HTTP/1.1[0m" 302 -
+10/29/2024 05:37:59 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:37:59 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 05:37:59 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 05:37:59 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:37:59] "[32mGET /shorturl?url=knmenjatxkjayto HTTP/1.1[0m" 302 -
+10/29/2024 05:37:59 PM - DEBUG - Functie redirect_to_url werd aangeroepen met argumenten: () en keyword argumenten: {'alias': 'knmenjatxkjayto'}
+10/29/2024 05:37:59 PM - INFO - 127.0.0.1 - - [29/Oct/2024 17:37:59] "[32mGET /knmenjatxkjayto HTTP/1.1[0m" 302 -
+10/29/2024 06:10:09 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 06:10:09 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 06:10:13 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:13 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 06:10:13 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:13 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:13] "[32mGET /shorturl?url=knmenjatxkjayto HTTP/1.1[0m" 302 -
+10/29/2024 06:10:13 PM - DEBUG - Functie redirect_to_url werd aangeroepen met argumenten: () en keyword argumenten: {'alias': 'knmenjatxkjayto'}
+10/29/2024 06:10:13 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:13 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:13] "[32mGET /knmenjatxkjayto HTTP/1.1[0m" 302 -
+10/29/2024 06:10:18 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:18 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 06:10:18 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:18 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:18] "GET /shorturl?url=ssssssss.be HTTP/1.1" 200 -
+10/29/2024 06:10:18 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:18] "[36mGET /static/style-404.css HTTP/1.1[0m" 304 -
+10/29/2024 06:10:28 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:28 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 06:10:28 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:28 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:28] "GET /shorturl?url=https.sssssss.be HTTP/1.1" 200 -
+10/29/2024 06:10:28 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:28] "[36mGET /static/style-404.css HTTP/1.1[0m" 304 -
+10/29/2024 06:10:39 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:39 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 06:10:39 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:39 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:39] "GET /shorturl?url=https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1" 200 -
+10/29/2024 06:10:39 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:39] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 06:10:53 PM - DEBUG - Functie controlpage werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:53 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 06:10:53 PM - DEBUG - Functie get_db_connection werd aangeroepen met argumenten: () en keyword argumenten: {}
+10/29/2024 06:10:53 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:53] "GET /shorturl?url=https://ssssssss.be HTTP/1.1" 200 -
+10/29/2024 06:10:53 PM - INFO - 127.0.0.1 - - [29/Oct/2024 18:10:53] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
