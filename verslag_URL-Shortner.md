@@ -48,4 +48,4 @@ Dit had ik al reeds gedaan door gebruik te maken van de Requests library. Maar a
 
 Het vorig project was voor mij redelijk demotiverend. Niets lukte goed en ik heb te veel gefocust op chatGPT voor mijn vorig project waardoor ik er op het einde zelf niet aanuitkon en dan ook niet heb ingediend.
 
-Dit project heeft mij terug gemotiveerd. Ik heb mij enorm geamuseerd met het project en het verliep over het algemeen goed naast enkele obstakels die ik onderweg ben tegengekomen.
+Dit project heeft mij terug gemotiveerd. Ik heb mij enorm geamuseerd met het project en het verliep over het algemeen goed naast enkele obstakels die ik onderweg ben tegengekomen. Ook heb ik voor dit project meer gebruik gemaakt van github waardoor ik goed aan versiebeheer kon doen voor moest er iets zwaar foutgelopen zijn.
