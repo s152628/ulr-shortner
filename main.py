@@ -1,8 +1,13 @@
 from flask import Flask, render_template, redirect, request, g
+import random
 import sqlite3
 
 
 app = Flask(__name__)
+
+
+def random_alias(length=15):
+    return "".join(chr(random.randint(ord("a"), ord("z"))) for _ in range(length))
 
 
 # Database connectie aanmaken
@@ -22,14 +27,11 @@ def pagecontent():
 # shorturl pagina waar de gebruiker naartoe wordt gestuurd als hij een alias en een url heeft ingevoerd
 @app.route("/shorturl")
 def controlpage():
-    alias = request.args.get("alias")
+    alias = random_alias()
     url = request.args.get("url")
     errors = []
-    if not alias:
-        errors.append("Alias is required")
     if not url:
         errors.append("Url is required")
-
     if errors:
         return render_template("template.html", errors=errors)
 
