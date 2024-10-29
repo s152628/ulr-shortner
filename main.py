@@ -34,6 +34,8 @@ def remember_recent_calls(func):
 
         return result
 
+    return wrapper
+
 
 def random_alias(length=15):
     return "".join(chr(random.randint(ord("a"), ord("z"))) for _ in range(length))
@@ -72,38 +74,27 @@ def pagecontent():
 # shorturl pagina waar de gebruiker naartoe wordt gestuurd als hij een alias en een url heeft ingevoerd
 
 
+@remember_recent_calls
 @app.route("/shorturl")
 def controlpage():
     app.logger.debug("Shorturl pagina werd bezocht")
-    alias = random_alias()
     url = request.args.get("url")
     errors = []
     if not url:
         errors.append("Url is required")
-    if errors:
         return render_template("template.html", errors=errors)
-    elif not is_url_valid(url):
+    db = get_db_connection()
+    cursor = db.cursor()
+    cursor.execute("SELECT url FROM urls WHERE alias = ?", (url,))
+    existing_url = cursor.fetchone()
+
+    if existing_url:
+        return redirect(existing_url[0])
+    if not is_url_valid(url):
         return render_template("template-404.html")
 
     # url en alias worden in de database opgeslagen
-    else:
-        db = get_db_connection()
-        cursor = db.cursor()
-        cursor.execute("INSERT INTO urls VALUES (?, ?)", (alias, url))
-        db.commit()
-        return render_template("template-shorturl.html", alias=alias)
-
-
-# pagina die de gebruiker naar de url stuurt die bij de alias hoort
-@remember_recent_calls
-@app.route("/shorturl/<alias>")
-def aliaspage(alias):
-    app.logger.debug(f"Alias {alias} werd bezocht")
-    db = get_db_connection()
-    cursor = db.cursor()
-    cursor.execute("SELECT url FROM urls WHERE alias = ?", (alias,))
-    url = cursor.fetchone()
-    if url:
-        return redirect(url[0])
-    else:
-        return f"Alias {alias} not found", 404
+    alias = random_alias()
+    cursor.execute("INSERT INTO urls VALUES (?, ?)", (alias, url))
+    db.commit()
+    return render_template("template-shorturl.html", alias=alias)
