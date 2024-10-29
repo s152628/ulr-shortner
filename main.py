@@ -3,6 +3,8 @@ import random
 import sqlite3
 import requests
 import logging
+from functools import wraps
+from collections import OrderedDict
 
 logging.basicConfig(
     filename="URL_shortner.log",
@@ -14,6 +16,23 @@ logging.basicConfig(
 
 
 app = Flask(__name__)
+
+
+def remember_recent_calls(func):
+    cache = OrderedDict()
+
+    @wraps(func)
+    def wrapper(alias):
+        if alias in cache:
+            cache.move_to_end(alias)
+            return cache[alias]
+
+        result = func(alias)
+        cache[alias] = result
+        if len(cache) > 5:
+            cache.popitem(last=False)
+
+        return result
 
 
 def random_alias(length=15):
@@ -51,6 +70,8 @@ def pagecontent():
 
 
 # shorturl pagina waar de gebruiker naartoe wordt gestuurd als hij een alias en een url heeft ingevoerd
+
+
 @app.route("/shorturl")
 def controlpage():
     app.logger.debug("Shorturl pagina werd bezocht")
@@ -74,6 +95,7 @@ def controlpage():
 
 
 # pagina die de gebruiker naar de url stuurt die bij de alias hoort
+@remember_recent_calls
 @app.route("/shorturl/<alias>")
 def aliaspage(alias):
     app.logger.debug(f"Alias {alias} werd bezocht")

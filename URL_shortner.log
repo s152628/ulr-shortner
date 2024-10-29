@@ -35,3 +35,43 @@ Homepagina werd bezocht
 10/29/2024 02:28:30 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:28:30] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
 10/29/2024 02:28:51 PM - DEBUG - Alias pgbogbqzlnyumcw werd bezocht
 10/29/2024 02:28:51 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:28:51] "[32mGET /shorturl/pgbogbqzlnyumcw HTTP/1.1[0m" 302 -
+10/29/2024 03:50:41 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 03:50:41 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 03:50:43 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 03:50:43 PM - INFO - 127.0.0.1 - - [29/Oct/2024 15:50:43] "GET / HTTP/1.1" 200 -
+10/29/2024 03:50:44 PM - INFO - 127.0.0.1 - - [29/Oct/2024 15:50:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 03:50:44 PM - INFO - 127.0.0.1 - - [29/Oct/2024 15:50:44] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 03:50:48 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 03:50:48 PM - DEBUG - Starting new HTTPS connection (1): stackoverflow.com:443
+10/29/2024 03:50:48 PM - DEBUG - https://stackoverflow.com:443 "GET /questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/11" 200 None
+10/29/2024 03:50:48 PM - INFO - 127.0.0.1 - - [29/Oct/2024 15:50:48] "GET /shorturl?url=https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1" 200 -
+10/29/2024 03:50:48 PM - INFO - 127.0.0.1 - - [29/Oct/2024 15:50:48] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 03:50:52 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 03:50:52 PM - DEBUG - Starting new HTTPS connection (1): stackoverflow.com:443
+10/29/2024 03:50:52 PM - DEBUG - https://stackoverflow.com:443 "GET /questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/11" 200 None
+10/29/2024 03:50:52 PM - INFO - 127.0.0.1 - - [29/Oct/2024 15:50:52] "GET /shorturl?url=https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1" 200 -
+10/29/2024 03:50:52 PM - INFO - 127.0.0.1 - - [29/Oct/2024 15:50:52] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 03:51:04 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 03:51:04 PM - DEBUG - Starting new HTTPS connection (1): stackoverflow.com:443
+10/29/2024 03:51:05 PM - DEBUG - https://stackoverflow.com:443 "GET /questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/11" 200 None
+10/29/2024 03:51:05 PM - INFO - 127.0.0.1 - - [29/Oct/2024 15:51:05] "GET /shorturl?url=https://stackoverflow.com/questions/7225900/how-can-i-install-packages-using-pip-according-to-the-requirements-txt-file-from HTTP/1.1" 200 -
+10/29/2024 03:51:05 PM - INFO - 127.0.0.1 - - [29/Oct/2024 15:51:05] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 04:01:18 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 04:01:18 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 04:01:22 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 04:01:22 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:01:22] "GET / HTTP/1.1" 200 -
+10/29/2024 04:01:22 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:01:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 04:01:22 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:01:22] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 04:02:19 PM - DEBUG - Alias svmqqeqoxhkdpng werd bezocht
+10/29/2024 04:02:19 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:02:19] "[32mGET /shorturl/svmqqeqoxhkdpng HTTP/1.1[0m" 302 -
+10/29/2024 04:03:00 PM - DEBUG - Alias svmqqeqoxhkdpng werd bezocht
+10/29/2024 04:03:00 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:03:00] "[32mGET /shorturl/svmqqeqoxhkdpng HTTP/1.1[0m" 302 -
+10/29/2024 04:05:55 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 04:05:55 PM - DEBUG - Starting new HTTPS connection (1): docs.python.org:443
+10/29/2024 04:05:55 PM - DEBUG - https://docs.python.org:443 "GET /3/library/functools.html HTTP/11" 200 16992
+10/29/2024 04:05:55 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:05:55] "GET /shorturl?url=https://docs.python.org/3/library/functools.html%23functools.wraps HTTP/1.1" 200 -
+10/29/2024 04:05:55 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:05:55] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 04:06:06 PM - DEBUG - Alias hdkzrnsdiizyyac werd bezocht
+10/29/2024 04:06:06 PM - INFO - 127.0.0.1 - - [29/Oct/2024 16:06:06] "[32mGET /shorturl/hdkzrnsdiizyyac HTTP/1.1[0m" 302 -
