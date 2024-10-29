@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Error message styling */
+h1 {
+  font-size: 2.5rem;
+  color: #d9534f; /* Red color to indicate an error */
+  margin-bottom: 20px;
+  text-align: center;
+}

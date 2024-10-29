@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, request, g
 import random
 import sqlite3
+import requests
 
 
 app = Flask(__name__)
@@ -10,12 +11,27 @@ def random_alias(length=15):
     return "".join(chr(random.randint(ord("a"), ord("z"))) for _ in range(length))
 
 
+def is_url_valid(url):
+    try:
+        response = requests.get(url, timeout=5)  # Set a timeout for the request
+        return response.status_code == 200
+    except requests.RequestException:
+        return False
+
+
 # Database connectie aanmaken
 def get_db_connection():
     if "db" not in g:
         g.db = sqlite3.connect("urls.db")
         g.db.execute("CREATE TABLE IF NOT EXISTS urls (alias TEXT, url TEXT)")
     return g.db
+
+
+@app.teardown_appcontext
+def close_db_connection(exception):
+    db = g.pop("db", None)
+    if db is not None:
+        db.close()
 
 
 # homepagina aanmaken die de template.html laadt
@@ -34,6 +50,8 @@ def controlpage():
         errors.append("Url is required")
     if errors:
         return render_template("template.html", errors=errors)
+    elif not is_url_valid(url):
+        return render_template("template-404.html")
 
     # url en alias worden in de database opgeslagen
     else:
@@ -41,7 +59,7 @@ def controlpage():
         cursor = db.cursor()
         cursor.execute("INSERT INTO urls VALUES (?, ?)", (alias, url))
         db.commit()
-        return f"Alias: {alias} Url: {url}"
+        return render_template("template-shorturl.html", alias=alias)
 
 
 # pagina die de gebruiker naar de url stuurt die bij de alias hoort

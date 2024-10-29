@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
   </head>
   <body>
+    <div class="banner">
+      <h1>Short URL generator</h1>
+    </div>
     <form action="/shorturl">
       <label for="name">Geef een url:</label>
       <input type="text" id="url" name="url" />
       <button type="submit">Submit</button>
     </form>
     {% if errors %}
-    <ul style="color:red">
+    <ul>
       {% for error in errors %}
       <li>{{ error }}</li>
       {% endfor %}
