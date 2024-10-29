@@ -1,0 +1,37 @@
+10/29/2024 02:24:25 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 02:24:25 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 02:26:11 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 02:26:11 PM - INFO - [33mPress CTRL+C to quit[0m
+Homepagina werd bezocht
+10/29/2024 02:26:18 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 02:26:18 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:26:18] "GET / HTTP/1.1" 200 -
+10/29/2024 02:26:18 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:26:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 02:26:18 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:26:18] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+Shorturl pagina werd bezocht
+10/29/2024 02:26:39 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 02:26:39 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:26:39] "GET /shorturl?url=ap.be HTTP/1.1" 200 -
+10/29/2024 02:26:39 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:26:39] "[36mGET /static/style-404.css HTTP/1.1[0m" 304 -
+10/29/2024 02:27:37 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 02:27:37 PM - INFO - [33mPress CTRL+C to quit[0m
+Homepagina werd bezocht
+10/29/2024 02:27:41 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 02:27:41 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:27:41] "GET / HTTP/1.1" 200 -
+10/29/2024 02:27:41 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:27:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 02:27:41 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:27:41] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 02:27:54 PM - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10/29/2024 02:27:54 PM - INFO - [33mPress CTRL+C to quit[0m
+10/29/2024 02:27:59 PM - DEBUG - Homepagina werd bezocht
+10/29/2024 02:27:59 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:27:59] "GET / HTTP/1.1" 200 -
+10/29/2024 02:27:59 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:27:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+10/29/2024 02:27:59 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:27:59] "[36mGET /static/scissor.jpg HTTP/1.1[0m" 304 -
+10/29/2024 02:28:30 PM - DEBUG - Shorturl pagina werd bezocht
+10/29/2024 02:28:30 PM - DEBUG - Starting new HTTPS connection (1): www.songsterr.com:443
+10/29/2024 02:28:30 PM - DEBUG - https://www.songsterr.com:443 "GET /a/wsa/audioslave-like-a-stone-tab-s1859t0 HTTP/11" 200 None
+10/29/2024 02:28:30 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:28:30] "GET /shorturl?url=https://www.songsterr.com/a/wsa/audioslave-like-a-stone-tab-s1859t0 HTTP/1.1" 200 -
+10/29/2024 02:28:30 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:28:30] "[36mGET /static/style-shorturl.css HTTP/1.1[0m" 304 -
+10/29/2024 02:28:51 PM - DEBUG - Alias pgbogbqzlnyumcw werd bezocht
+10/29/2024 02:28:51 PM - INFO - 127.0.0.1 - - [29/Oct/2024 14:28:51] "[32mGET /shorturl/pgbogbqzlnyumcw HTTP/1.1[0m" 302 -

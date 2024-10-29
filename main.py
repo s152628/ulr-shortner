@@ -2,6 +2,15 @@ from flask import Flask, render_template, redirect, request, g
 import random
 import sqlite3
 import requests
+import logging
+
+logging.basicConfig(
+    filename="URL_shortner.log",
+    encoding="utf-8",
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%m/%d/%Y %I:%M:%S %p",
+    level=logging.DEBUG,
+)
 
 
 app = Flask(__name__)
@@ -37,12 +46,14 @@ def close_db_connection(exception):
 # homepagina aanmaken die de template.html laadt
 @app.route("/")
 def pagecontent():
+    app.logger.debug("Homepagina werd bezocht")
     return render_template("template.html")
 
 
 # shorturl pagina waar de gebruiker naartoe wordt gestuurd als hij een alias en een url heeft ingevoerd
 @app.route("/shorturl")
 def controlpage():
+    app.logger.debug("Shorturl pagina werd bezocht")
     alias = random_alias()
     url = request.args.get("url")
     errors = []
@@ -65,6 +76,7 @@ def controlpage():
 # pagina die de gebruiker naar de url stuurt die bij de alias hoort
 @app.route("/shorturl/<alias>")
 def aliaspage(alias):
+    app.logger.debug(f"Alias {alias} werd bezocht")
     db = get_db_connection()
     cursor = db.cursor()
     cursor.execute("SELECT url FROM urls WHERE alias = ?", (alias,))
